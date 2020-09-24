@@ -15,7 +15,7 @@ pipeline {
 
     stage('Secure') {
       steps {
-        sh 'Echo "Securing..."'
+        sh 'echo "Securing..."'
       }
     }
 
