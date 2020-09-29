@@ -4,12 +4,10 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'python:2-alpine'
+          image 'python'
+          args '2-alpine'
         }
 
-      }
-      environment {
-        PythonBuild = '1'
       }
       steps {
         sh 'echo "Building..."'
